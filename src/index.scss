@@ -1,0 +1,28 @@
+@import "~bootstrap/scss/bootstrap";
+@mixin blue {
+    background-color: navy;
+    color: burlywood;
+    font-weight: bold;
+  }
+
+  @mixin timesFont{
+
+    font-family: "Times New Roman", Times, serif;
+  }
+
+.image{
+    height: 50px;
+    width:50px
+}
+
+.tableContainer{
+margin-top: 20px;
+border: 2px solid black;
+    .tableHead{
+        @include blue;
+        @include timesFont
+
+    }
+    
+}
+
